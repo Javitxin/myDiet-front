@@ -1,11 +1,14 @@
-import './App.css'
+import './App.css';
+import { DietProvider } from './context/DietContext.jsx';
+import RoutesApp from './routes/RoutesApp.jsx';
 
 function App() {
- 
+  
+
   return (
-    <>
-     <h1>My Diet</h1> 
-    </>
+      <DietProvider>
+        <RoutesApp />
+      </DietProvider>
   )
 }
 
